@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53B5BACF22DCF2BB0001040C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5BACE22DCF2BB0001040C /* WelcomeViewController.swift */; };
+		53B5BAD222DCF9A90001040C /* AzoeraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5BAD122DCF9A90001040C /* AzoeraTextField.swift */; };
 		F73DEEA4223AF4550023C6C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73DEEA3223AF4550023C6C6 /* AppDelegate.swift */; };
 		F73DEEA9223AF4550023C6C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73DEEA7223AF4550023C6C6 /* Main.storyboard */; };
 		F73DEEAB223AF4570023C6C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F73DEEAA223AF4570023C6C6 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53B5BACE22DCF2BB0001040C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		53B5BAD122DCF9A90001040C /* AzoeraTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzoeraTextField.swift; sourceTree = "<group>"; };
 		F73DEEA0223AF4550023C6C6 /* Azoera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Azoera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73DEEA3223AF4550023C6C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F73DEEA8223AF4550023C6C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +47,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53B5BACD22DCF28F0001040C /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				53B5BACE22DCF2BB0001040C /* WelcomeViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		53B5BAD022DCF45F0001040C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F73DEEA7223AF4550023C6C6 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		F73DEE97223AF4550023C6C6 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +82,8 @@
 		F73DEEA2223AF4550023C6C6 /* Azoera */ = {
 			isa = PBXGroup;
 			children = (
+				53B5BAD022DCF45F0001040C /* View */,
+				53B5BACD22DCF28F0001040C /* View Controller */,
 				F763B96A22526928005697E5 /* CustomUI */,
 				F763B968225268F2005697E5 /* Resources */,
 			);
@@ -73,7 +95,6 @@
 			children = (
 				F763B97E22526D11005697E5 /* Fonts */,
 				F73DEEA3223AF4550023C6C6 /* AppDelegate.swift */,
-				F73DEEA7223AF4550023C6C6 /* Main.storyboard */,
 				F7E00FC822455CBA00B51EFA /* Colors.xcassets */,
 				F73DEEAA223AF4570023C6C6 /* Assets.xcassets */,
 				F73DEEAC223AF4570023C6C6 /* LaunchScreen.storyboard */,
@@ -86,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				F763B96B2252693E005697E5 /* StyleGuide.swift */,
+				53B5BAD122DCF9A90001040C /* AzoeraTextField.swift */,
 			);
 			path = CustomUI;
 			sourceTree = "<group>";
@@ -175,8 +197,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53B5BACF22DCF2BB0001040C /* WelcomeViewController.swift in Sources */,
 				F73DEEA4223AF4550023C6C6 /* AppDelegate.swift in Sources */,
 				F763B96C2252693E005697E5 /* StyleGuide.swift in Sources */,
+				53B5BAD222DCF9A90001040C /* AzoeraTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,7 +346,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77U2457882;
+				DEVELOPMENT_TEAM = 8MJ3MC3A9A;
 				INFOPLIST_FILE = "$(SRCROOT)/Azoera/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -339,7 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 77U2457882;
+				DEVELOPMENT_TEAM = 8MJ3MC3A9A;
 				INFOPLIST_FILE = "$(SRCROOT)/Azoera/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
