@@ -10,6 +10,29 @@ import UIKit
 
 class AzoeraTextField: UITextField {
 
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        setUpUI()
+    }
 
-
+    func setUpUI() {
+        self.overridePlaceholderColor()
+        self.addCornerRadius(10)
+        self.backgroundColor = .blackOverlay
+        self.layer.masksToBounds = true
+        self.textColor = UIColor.mainTextColor
+        self.tintColor = .mainTextColor
+        overrideFont(with: FontNames.latoRegular)
+        self.addBorder()
+    }
+    
+    func overridePlaceholderColor() {
+        let currentPlaceholderText = self.placeholder
+        self.attributedPlaceholder = NSAttributedString(string: currentPlaceholderText ?? "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.subltleTextColor, NSAttributedString.Key.font: UIFont(name: FontNames.latoLight, size: 16)!])
+    }
+    
+    func overrideFont(with fontName: String) {
+        guard let size = self.font?.pointSize else { return }
+        self.font = UIFont(name: fontName, size: size)!
+    }
 }
